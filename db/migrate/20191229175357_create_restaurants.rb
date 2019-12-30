@@ -9,7 +9,7 @@ class CreateRestaurants < ActiveRecord::Migration[5.2]
       t.string :city
       t.string :street
       t.string :neighborhood
-      t.string :numer
+      t.string :number
       t.string :complement
       t.string :reference
       t.string :cep
