@@ -1,8 +1,8 @@
-class OrderController < ApplicationController
+class OrdersController < ApplicationController
   before_action :set_order, only: :show
 
   def create
-    order - Order.new(order_params)
+    order = Order.new(order_params)
     if order.save
       render json: order, status: :created
     else
